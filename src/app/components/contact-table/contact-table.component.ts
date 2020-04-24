@@ -12,7 +12,7 @@ export class ContactTableComponent implements OnInit, OnDestroy {
 
   constructor(private contactService: ContactService) {
   }
-  public contactList: any = [];
+  public contactList: Array<Contact> = [];
   private subscription: Subscription;
 
   ngOnInit(): void {
@@ -44,7 +44,7 @@ export class ContactTableComponent implements OnInit, OnDestroy {
     this.contactService.updateContact(selectedContact).subscribe();
   }
 
-  public updateFavoritesViews(contacts: any): any {
+  public updateFavoritesViews(contacts: Array<Contact>): Array<Contact> {
     const isFavoriteContact = contacts
       .filter(value => value.isFavorite)
       .sort((currentContact, nextContact) => currentContact.id - nextContact.id);

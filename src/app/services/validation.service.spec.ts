@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ValidationService } from './validation.service';
-import { messageList } from '../utile/constants';
+import { messageList } from '../utils/constants';
 
 describe('ValidationService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

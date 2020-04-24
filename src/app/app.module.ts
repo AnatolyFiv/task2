@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AddContactFormComponent } from './components/add-contac-form/add-contact-form.component';
+import { AddContactFormComponent } from './components/add-contact-form/add-contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactTableComponent } from './components/contact-table/contact-table.component';

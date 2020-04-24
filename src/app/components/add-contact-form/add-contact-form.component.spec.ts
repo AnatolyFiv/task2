@@ -10,7 +10,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../../services/in-memory-data.service';
 import { ValidationService } from '../../services/validation.service';
 import { Contact } from '../../interfaces/contact';
-import { testContactObject } from '../../utile/constants';
+import { testContactObject } from '../../utils/constants';
 
 describe('AddContactFormComponent', () => {
   let component: AddContactFormComponent;

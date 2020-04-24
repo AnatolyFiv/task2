@@ -1,6 +1,6 @@
 import { PhoneMaskDirective } from './phone-mask.directive';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { AddContactFormComponent } from '../components/add-contac-form/add-contact-form.component';
+import { AddContactFormComponent } from '../components/add-contact-form/add-contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorControlMessagesComponent } from '../components/error-control-messages/error-control-messages.component';
 import { HttpClientModule } from '@angular/common/http';

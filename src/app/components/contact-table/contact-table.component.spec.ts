@@ -6,7 +6,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../../services/in-memory-data.service';
 import { ContactService } from '../../services/contact.service';
 import { of } from 'rxjs';
-import { fakedFetchedList } from '../../utile/constants';
+import { fakedFetchedList } from '../../utils/constants';
 
 describe('ContactTableComponent', () => {
   let component: ContactTableComponent;

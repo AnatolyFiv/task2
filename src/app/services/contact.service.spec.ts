@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { Contact } from '../interfaces/contact';
-import { fakedFetchedList, newContact } from '../utile/constants';
+import { fakedFetchedList, newContact } from '../utils/constants';
 
 describe('ContactService', () => {
 
