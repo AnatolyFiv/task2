@@ -1,0 +1,5 @@
+.app-wrapper {
+  height: calc(100% - 91px);
+  margin-left: 20px;
+  margin-right: 20px;
+}

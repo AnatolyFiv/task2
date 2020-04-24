@@ -1,0 +1,108 @@
+.contact__table-wrapper {
+  height: calc(100vh - 140px);
+  min-height: calc(100vh - 140px);
+  max-height: calc(100vh - 140px);
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid rgb(228, 231, 234);
+}
+
+.contact__table__column-small {
+  width: 35px;
+  text-align: center;
+}
+
+.contact__table__favorite {
+  width: 18px;
+  max-width: 18px;
+  min-width: 18px;
+  height: 18px;
+  max-height: 18px;
+  min-height: 18px;
+  cursor: pointer;
+}
+
+.contact__table__favorite-selected {
+  color: rgb(255, 215, 0);
+}
+
+.contact__table__delete-icon {
+  width: 15px;
+  max-width: 15px;
+  min-width: 15px;
+  height: 15px;
+  max-height: 15px;
+  min-height: 15px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: rgb(255, 255, 255);
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+}
+
+th {
+  padding: 0;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(228, 231, 234);
+  font-weight: normal;
+  background: rgb(255, 255, 255);
+  color: rgb(92, 92, 92);
+}
+
+th div {
+  border-bottom: 1px solid rgb(228, 231, 234);
+}
+
+th span {
+  height: 15px;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+tr {
+  border: 1px solid rgb(228, 231, 234);
+  border-top: none;
+}
+
+td {
+  height: 36px;
+  min-height: 36px;
+  line-height: 17px;
+  padding: 8px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  border-right: 1px solid rgb(228, 231, 234);
+}
+
+td span {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1024px) {
+  .contact__table-wrapper {
+    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+  }
+}

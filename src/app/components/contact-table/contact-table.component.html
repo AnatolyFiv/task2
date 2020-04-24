@@ -1,0 +1,57 @@
+<div class="contact__table-wrapper">
+
+  <table>
+
+    <thead>
+    <tr>
+      <th class="contact__table__column-small">
+        <div><span></span></div>
+      </th>
+      <th>
+        <div><span>Фамилия</span></div>
+      </th>
+      <th>
+        <div><span>Имя</span></div>
+      </th>
+      <th>
+        <div><span>Отчество</span></div>
+      </th>
+      <th>
+        <div><span>Телефон</span></div>
+      </th>
+      <th class="contact__table__column-small">
+        <div><span></span></div>
+      </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let contact of contactList">
+      <td *ngIf="!contact.isFavorite">
+        <img src="../../../assets/img/star-not-selected.svg"
+             class="contact__table__favorite"
+             alt="Избранное"
+             (click)="updateFavorite(contact)">
+      </td>
+      <td *ngIf="contact.isFavorite">
+        <img src="../../../assets/img/star-selected.svg"
+             class="contact__table__favorite"
+             alt="Избранное"
+             (click)="updateFavorite(contact)">
+      </td>
+      <td><span title="{{contact.surname}}">{{ contact.surname }}</span></td>
+      <td><span title="{{ contact.name }}">{{ contact.name }}</span></td>
+      <td><span title="{{ contact.patronymic }}">{{ contact.patronymic }}</span></td>
+      <td><span title="{{ contact.phoneNumber }}">{{ contact.phoneNumber }}</span></td>
+      <td>
+        <img src="../../../assets/img/delete-icon.svg"
+             class="contact__table__delete-icon"
+             alt="Удалить"
+             (click)="deleteContact(contact.id)">
+      </td>
+    </tr>
+    </tbody>
+
+  </table>
+
+</div>

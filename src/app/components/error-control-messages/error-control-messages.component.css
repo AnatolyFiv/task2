@@ -1,0 +1,6 @@
+.error__control__message__main__text {
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+}

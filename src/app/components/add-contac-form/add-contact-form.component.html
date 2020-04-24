@@ -1,0 +1,35 @@
+<form [formGroup]="contactForm" (submit)="addNewContact()">
+
+  <label for="surname">Фамилия *
+    <input (keydown)="resetFormValidation()"
+           class="{{ surname.invalid && !isValidForm ? 'add__contact__form__validation-error' : '' }}"
+           formControlName="surname"
+           id="surname"/>
+    <app-error-control-messages *ngIf="!isValidForm"
+                                [control]="contactForm.get('surname')"></app-error-control-messages>
+  </label>
+
+  <label for="name">Имя
+    <input formControlName="name" id="name"/>
+  </label>
+
+  <label for="patronymic">Отчество
+    <input formControlName="patronymic" id="patronymic"/>
+  </label>
+
+  <div class="add__contact__form__country__input-wrapper">
+    <label for="phoneNumber">Телефон *
+      <input (keydown)="resetFormValidation()"
+             class="add__contact__form__country-input {{ phoneNumber.invalid && !isValidForm ? 'add__contact__form__validation-error' : '' }}"
+             formControlName="phoneNumber"
+             id="phoneNumber"
+             appPhoneMask maxlength="15"/>
+      <app-error-control-messages *ngIf="!isValidForm"
+                                  [control]="contactForm.get('phoneNumber')"></app-error-control-messages>
+    </label>
+    <div class="add__contact__form__country-number">{{ countryNumber }}</div>
+  </div>
+
+  <button type="submit" [disabled]="!isValidForm">+</button>
+
+</form>
